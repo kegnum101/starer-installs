@@ -116,10 +116,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-# Example for bash
-LS_COLORS=$LS_COLORS:'di=0;1;93' ;
-LS_COLORS=$LS_COLORS:'no=0;33:' ;
-export LS_COLORS
 
 # VS Code color fix
 if [ "$TERM_PROGRAM" = "vscode" ]; then
