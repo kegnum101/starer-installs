@@ -17,3 +17,31 @@ sudo apt install -y \
     jq
 
 echo "All packages installed successfully!"
+
+echo smartmontools
+dpkg -s smartmontools | grep -E "Package|Status"
+echo --
+echo lm-sensors
+dpkg -s lm-sensors | grep -E "Package|Status"
+echo --
+echo mosquitto-clients
+dpkg -s mosquitto-clients | grep -E "Package|Status"
+echo --
+echo python3-pip
+dpkg -s python3-pip | grep -E "Package|Status"
+echo --
+echo python3-venv
+dpkg -s python3-venv | grep -E "Package|Status"
+echo --
+echo inotify-tools
+dpkg -s inotify-tools | grep -E "Package|Status"
+echo --
+echo zip
+dpkg -s zip | grep -E "Package|Status"
+echo --
+echo bc
+dpkg -s bc | grep -E "Package|Status"
+echo --
+echo jq
+dpkg -s jq | grep -E "Package|Status"
+echo --
